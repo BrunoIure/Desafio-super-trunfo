@@ -20,7 +20,9 @@ O usuário deve inserir manualmente os dados de duas cidades, e o programa exibi
 
 1. Tenha compilador C instalado, como o GCC.
 2. Compile o código 
-3.Execute o programa:
+3.Execute o programa
+
+
 
 
 #Exemplo de Uso:
@@ -41,16 +43,28 @@ Insira o PIB da cidade:800.50
 
 Insira o numero de pontos turisticos da cidade:25
 
+
+
 #A saída será algo assim:
 
 Carta 1
+
 Estado:SP
+
 Codigo:A01
+
 Nome da Cidade:Sao-Paulo
+
 Populacao:12000000
+
 Area:1521.11 km's quadrados
+
 PIB:800.50 bilhao(es) de reais
+
 Numero de Pontos Turisticos:25
+
+
+
 
 #Observações importantes:
 
