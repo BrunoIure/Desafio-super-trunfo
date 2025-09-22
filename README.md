@@ -28,11 +28,17 @@ O usuário deve inserir manualmente os dados de duas cidades, e o programa exibi
 Vamos fornecer os dados da carta 1
 
 Insira o nome do estado (utilize '-' no lugar de espacos):SP
+
 Insira o codigo da carta (uma letra e dois numeros):A01
+
 Insira o nome da cidade (utilize '-' no lugar de espacos):Sao-Paulo
+
 Insira o tamanho da populacao da cidade (sem virgula ou ponto):12000000
+
 Insira a area da cidade:1521.11
+
 Insira o PIB da cidade:800.50
+
 Insira o numero de pontos turisticos da cidade:25
 
 #A saída será algo assim:
