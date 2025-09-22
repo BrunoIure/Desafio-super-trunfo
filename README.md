@@ -18,7 +18,7 @@ O usuário deve inserir manualmente os dados de duas cidades, e o programa exibi
 
 # Como Executar:
 
-1. Certifique-se de ter um compilador C instalado, como o GCC.
+1. Tenha compilador C instalado, como o GCC.
 2. Compile o código 
 3.Execute o programa:
 
