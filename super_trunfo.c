@@ -30,7 +30,7 @@ int main(){
   printf("Insira o nome da cidade (utilize '-' no lugar de espacos):");
   scanf("%s",nomeDaCidadeC1);
 
-  printf("Insira o tamanho da populacao da cidade (sem virgula ou ponto):");
+  printf("Insira o tamanho da populacao da cidade:");
   scanf("%d",&populacaoDaCidadeC1);
 
   printf("Insira a area da cidade:");
@@ -44,6 +44,11 @@ int main(){
   printf(" \n");
 
 //fim do preenchimento dos atributos da carta 1.
+
+
+//pega informações inseridas pelo usuario para calcular densidade populacional e pib per capita, serão exibidos para o usuario no final junto das outras informações da carta
+float densidadePopulacionalC1=populacaoDaCidadeC1/areaDaCidadeC1;
+float pibPerCapitaC1=pibDaCidadeC1/populacaoDaCidadeC1;
 
 
 //Aqui começa a ser preenchida a carta 2.
@@ -74,7 +79,7 @@ int main(){
   printf("Insira o nome da cidade (utilize '-' no lugar de espacos):");
   scanf("%s",nomeDaCidadeC2);
 
-  printf("Insira o tamanho da populacao da cidade (sem virgula ou ponto):");
+  printf("Insira o tamanho da populacao da cidade:");
   scanf("%d",&populacaoDaCidadeC2);
 
   printf("Insira a area da cidade:");
@@ -88,6 +93,12 @@ int main(){
   printf(" \n");
 
 //fim do preenchimento dos atributos da carta 2.
+
+
+//pega informações inseridas pelo usuario para calcular densidade populacional e pib per capita, serão exibidos para o usuario no final junto das outras informações da carta
+float densidadePopulacionalC2=populacaoDaCidadeC2/areaDaCidadeC2;
+float pibPerCapitaC2=pibDaCidadeC2/populacaoDaCidadeC2;
+
 
 //Esta parte seguinte é responsavel por exibir as cartas preenchidas para o usuario no terminal, As duas cartas vão aparecer juntas.
 
@@ -104,6 +115,10 @@ int main(){
   printf("PIB:%.2f",pibDaCidadeC1);
   printf(" bilhao(es) de reais\n");
   printf("Numero de Pontos Turisticos:%d\n",pontosTuristicosC1);
+  printf("Densidade populacional:%.2f",densidadePopulacionalC1);
+  printf(" hab/km's quadrados\n");
+  printf("PIB per Capita:%.2f",pibPerCapitaC1);
+  printf(" reais\n");
 
   printf("\n"); //cria um espaço para vizualizar melhor as duas cartas.
 
@@ -120,6 +135,10 @@ int main(){
   printf("PIB:%.2f",pibDaCidadeC2);
   printf(" bilhao(es) de reais\n");
   printf("Numero de Pontos Turisticos:%d\n",pontosTuristicosC2);
+  printf("Densidade populacional:%.2f",densidadePopulacionalC2);
+  printf(" hab/km's quadrados\n");
+  printf("PIB per Capita:%.2f",pibPerCapitaC2);
+  printf(" reais\n");
 
   return 0;
 }
