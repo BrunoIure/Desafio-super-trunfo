@@ -109,7 +109,7 @@ float pibPerCapitaC2=pibDaCidadeC2/populacaoDaCidadeC2;
   printf("Estado:%s\n",nomeDoEstadoC1);
   printf("Codigo:%s\n",codigoDaCartaC1);
   printf("Nome da Cidade:%s\n",nomeDaCidadeC1);
-  printf("Populacao:%d habitantes\n",populacaoDaCidadeC1);
+  printf("Populacao:%lu habitantes\n",populacaoDaCidadeC1);
   printf("Area:%.2f km's quadrados\n",areaDaCidadeC1);
   printf("PIB:R$%.2f\n",pibDaCidadeC1);
   printf("Numero de Pontos Turisticos:%d\n",pontosTuristicosC1);
@@ -125,7 +125,7 @@ float pibPerCapitaC2=pibDaCidadeC2/populacaoDaCidadeC2;
   printf("Estado:%s\n",nomeDoEstadoC2);
   printf("Codigo:%s\n",codigoDaCartaC2);
   printf("Nome da Cidade:%s\n",nomeDaCidadeC2);
-  printf("Populacao:%d habitantes\n",populacaoDaCidadeC2);
+  printf("Populacao:%lu habitantes\n",populacaoDaCidadeC2);
   printf("Area:%.2f km's quadrados\n",areaDaCidadeC2);
   printf("PIB:R$%.2f\n",pibDaCidadeC2);
   printf("Numero de Pontos Turisticos:%d\n",pontosTuristicosC2);
@@ -157,8 +157,23 @@ float pibPerCapitaC2=pibDaCidadeC2/populacaoDaCidadeC2;
   printf("Pontos Turisticos: %d\n",pontosTuristicosC1>pontosTuristicosC2);
   printf("Densidade Populacional (Vence quem tem a menor): %d\n",densidadePopulacionalC1<densidadePopulacionalC2);
   printf("PIB per capita: %d\n",pibPerCapitaC1>pibPerCapitaC2);
-  printf("Super Poder: %d",superPoderC1>superPoderC2);
+  printf("Super Poder: %d\n",superPoderC1>superPoderC2);
+  printf("\n");
 
+  //Aqui começa a comparação entre as duas cartas usando estruturas condicionais, Para todos os atributos, exceto Densidade Populacional, a carta com o maior valor vence, Para Densidade Populacional, a carta com o menor valor vence.
+
+  printf("Comparacao de cartas (Atributo: Populacao):\n");
+  printf("\n");
+  printf("Carta 1-Populacao:%lu\n",populacaoDaCidadeC1);
+  printf("Carta 2-Populacao:%lu\n",populacaoDaCidadeC2);
+
+  if(populacaoDaCidadeC1>populacaoDaCidadeC2){
+    printf("Resultado: Carta 1 venceu nesse atributo!\n");
+  }
+  else{
+    printf("Resultado: Carta 2 venceu nesse atributo!\n");
+  }
+  
   return 0;
 }
 
