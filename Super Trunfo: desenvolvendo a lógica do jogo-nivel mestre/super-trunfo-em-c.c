@@ -102,6 +102,7 @@ char nomeAtributo2Carta1[35];
 char nomeAtributo1Carta2[35];
 char nomeAtributo2Carta2[35]; 
 
+//Usa um loop que só é quebrado quando o usuario escolhe os atributos de forma correta.  
 while(1){
 
   //começa escolhendo os atributos da carta 1
@@ -418,3 +419,4 @@ case 6:
   return 0;
 
 }
+
